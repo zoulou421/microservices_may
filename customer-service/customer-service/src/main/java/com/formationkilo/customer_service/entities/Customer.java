@@ -11,7 +11,7 @@ import lombok.*;
 public class Customer {
     @Id
     @GeneratedValue
-    private Long Id;
+    private Long id;
     private String name;
     private String email;
 }

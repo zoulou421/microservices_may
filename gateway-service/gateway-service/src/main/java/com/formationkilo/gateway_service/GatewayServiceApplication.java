@@ -16,7 +16,7 @@ import org.springframework.http.server.reactive.ServerHttpRequest;
 
 import java.util.List;
 
-/*@SpringBootApplication
+@SpringBootApplication
 public class GatewayServiceApplication {
 
 	public static void main(String[] args) {
@@ -30,8 +30,9 @@ public class GatewayServiceApplication {
 
 	}
 }
-*/
-@SpringBootApplication
+
+/* @SpringBootApplication
+
 public class GatewayServiceApplication {
 
 	public static void main(String[] args) {
@@ -84,4 +85,4 @@ public class GatewayServiceApplication {
 			}
 		};
 	}
-}
+}*/
