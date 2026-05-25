@@ -7,11 +7,15 @@ import org.springframework.hateoas.PagedModel;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import java.util.Map;
+
 @FeignClient(name = "inventory-service")
 public interface ProductRestClient {
     @GetMapping("/api/products/{id}")
     Product getProductById(@PathVariable Long id);
 
-    @GetMapping("/api/products")
-    PagedModel<Product> getAllProducts();
+   /* @GetMapping("/api/products")
+    PagedModel<Product> getAllProducts();*/
+   @GetMapping("/api/products")
+   Map<String, Object> getAllProducts();
 }
